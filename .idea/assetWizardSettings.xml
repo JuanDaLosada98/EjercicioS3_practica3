@@ -33,7 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../Icesi-A-otro-Nivel-copia.png" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../icono_app.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -78,11 +78,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

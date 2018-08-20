@@ -10,13 +10,15 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/icono_app"
+        android:layout_marginTop="10dp"
 
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masa"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="#ccc"
         android:id="@+id/et_masa"
         android:layout_marginLeft="20dp"
@@ -26,8 +28,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Altura"
+        android:layout_marginTop="20dp"
         android:textColorHint="#ccc"
         android:id="@+id/et_altura"
         android:layout_marginLeft="20dp"

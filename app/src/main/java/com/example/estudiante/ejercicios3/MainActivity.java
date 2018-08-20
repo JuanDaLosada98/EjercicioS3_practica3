@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        tv_resultado= findViewById(R.id.et_altura);
+        tv_resultado= findViewById(R.id.tv_resultado);
         et_masa = findViewById(R.id.et_masa);
         et_altura = findViewById(R.id.et_altura);
         btn_calcular = findViewById(R.id.btn_calcular);
@@ -35,12 +35,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String masa = et_masa.getText().toString();
                 String altura = et_altura.getText().toString();
-                Double n1 = Double.parseDouble(altura);
-                Double n2 = Double.parseDouble(masa);
-                Double resultado = (n1 / n2);
-                Double exponente = Math.pow(resultado,2);
-                tv_resultado.setText(exponente.toString());
-                Toast.makeText(MainActivity.this, "Tú IMC ES " + exponente.toString(), Toast.LENGTH_SHORT).show();
+                Float n2 = Float.parseFloat(altura);
+                Float n1 = Float.parseFloat(masa);
+                Float resultado = (n1 / (n2*n2))*10000;
+                tv_resultado.setText(resultado.toString());
+                Toast.makeText(MainActivity.this, "Tú IMC ES " + resultado.toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
